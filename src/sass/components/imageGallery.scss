@@ -1,0 +1,97 @@
+.gallery-container {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    position: relative;
+    background: white;
+    z-index: 10;
+
+    &-close-btn {
+        border: 2px solid black;
+        padding: 1rem;
+        margin: 1rem;
+        transition: 0.4s;
+        
+        &:hover {
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .image-gallery-container {
+        position: relative;
+        height: 60vh;
+        width: 90vh;
+
+        .image-container {
+            opacity: 0;
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            transition: 0.4s ease-out;
+            
+            &-active {
+                opacity: 1;
+            }
+        }
+    
+    
+        img {
+            width: inherit;
+            height: inherit;
+            z-index: 0;
+        }
+    
+        .image-info-container {
+            background: white;
+            color: black;
+            border: 2px solid black;
+            width: 25%;
+            margin-top: 0.5rem;
+            border-radius: 2px;
+        }
+
+        .bold {
+            font-weight: bolder;
+            font-family: $secondary-font;
+        }
+    
+        ul {
+    
+            li {
+                line-height: 1.5;
+                font-family: $secondary-font;
+            }
+    
+        }
+     
+    }
+    
+    .arrow-container {
+        margin-top: 2rem;
+    
+        .arrow {
+            background: black;
+            color: white;
+            font-size: 2rem;
+            display: inline;
+            font-weight: 800;
+            border: 2px solid black;
+            padding: 1rem;
+            padding-top: 0.5rem;
+            user-select: none;
+            
+            &:hover {
+                background: white;
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+}
+

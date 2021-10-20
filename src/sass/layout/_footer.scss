@@ -1,0 +1,28 @@
+footer {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+
+        li {
+            font-family: $secondary-font;
+            padding: 1rem;
+            background: black;
+            color: white;
+            border-bottom: 2px solid white;
+            transition: 0.4s;
+
+            &:hover {
+                color: black;
+                background: white;
+                border-bottom: 2px solid black;
+                cursor: pointer;
+            }
+        }
+    }
+}

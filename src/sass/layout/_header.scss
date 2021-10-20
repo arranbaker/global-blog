@@ -1,0 +1,22 @@
+header {
+    height: 10vh;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    
+
+    .header-title {
+        font-family: $secondary-font;
+        margin: 0;
+        transition: 0.2s;
+        background: black;
+        color: white;
+        display: inline;
+        padding: 0.5rem;
+        border: 2px solid black;
+
+        &:hover {
+           background: white;
+           color: black;
+        }
+    }
+}

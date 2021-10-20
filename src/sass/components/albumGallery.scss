@@ -1,0 +1,59 @@
+.album-gallery-container{
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+
+    .album-cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        justify-content: center;
+      }
+
+      .card {
+        font-family: sans-serif;
+        color: DimGrey;
+        padding: 2rem;
+        box-shadow: 4px 4px 12px 2px rgba(black, 0.3);
+        transition: 0.2s;
+        width: 18vw;
+        height: 18vw;
+        margin: 1rem;
+        background-size: cover;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .info-container {
+        color: black;
+        height: auto;
+        width: 80%;
+        opacity: 0.8;
+
+        h2 {
+          font-size: 1.125rem;
+          font-family: $main-font;
+          font-weight: lighter;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      
+      .card:not(:first-child) {
+        margin-left: var(--distance);
+      }
+      
+      .card:hover,
+      .card:focus-within    {
+        transform: translateY(-2rem);
+        cursor: pointer;
+      }
+}
