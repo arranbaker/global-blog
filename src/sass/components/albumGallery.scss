@@ -1,11 +1,17 @@
 .album-gallery-container{
     position: absolute;
     width: 100vw;
-    height: 80vh;
+    height: 70%;
     text-align: center;
     z-index: 2;
     display: grid;
     place-items: center;
+
+    .album-cards-title {
+      margin-bottom: 1rem;
+      text-decoration: underline;
+      padding: 0.5rem;
+    }
 
     .album-cards {
         display: flex;

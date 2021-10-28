@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer>
             <ul>
-                <Link to={'/info'}><li>INFO</li></Link>
                 <Link to={'/blog'}><li>BLOG</li></Link>
+                <Link to={'/info'}><li>INFO</li></Link>
             </ul>
         </footer >
     )

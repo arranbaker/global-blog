@@ -5,6 +5,7 @@ const AlbumGallery = ({ openGallery }) => {
 
     return (
         <div className='album-gallery-container'>
+            <h2 className='album-cards-title'>ALBUMS</h2>
             <div className="album-cards">
                 {imageData.map((card, cardIndex) => {
                     return (
