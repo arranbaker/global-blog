@@ -1,26 +1,38 @@
 .gallery-container {
-    height: 80vh;
-    width: 80vw;
+    height: 96vh;
+    width: 98vw;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    top: 2%;
+    left: 1%;
     background: white;
     z-index: 10;
 
     &-close-btn {
         border: 2px solid black;
-        padding: 1rem;
-        margin: 1rem;
+        padding: 0.75rem;
+        padding-top: 0.65rem;
+        padding-bottom: 0.65rem;
         transition: 0.4s;
+        position: absolute;
+        top: 6%;
         
         &:hover {
             background: black;
             color: white;
             cursor: pointer;
         }
+    }
+
+    .gallery-slider-container {
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 
     .image-gallery-container {
@@ -50,47 +62,50 @@
         .image-info-container {
             background: white;
             color: black;
-            border: 2px solid black;
-            width: 25%;
-            margin-top: 0.5rem;
+            margin: 0 auto;
             border-radius: 2px;
+            text-align: center;
+            width: 40%;
+            margin-top: 2%;
+            
+            ul {
+
+                padding: 0;
+                border: 2px solid black;
+                padding: 0.5rem;
+        
+                li {
+                    line-height: 1.5;
+                    font-family: $secondary-font;
+                }
+        
+            }
         }
 
         .bold {
             font-weight: bolder;
             font-family: $secondary-font;
-        }
-    
-        ul {
-    
-            li {
-                line-height: 1.5;
-                font-family: $secondary-font;
-            }
-    
+            text-align: center;
         }
      
     }
-    
-    .arrow-container {
-        margin-top: 2rem;
-    
-        .arrow {
-            background: black;
-            color: white;
-            font-size: 2rem;
-            display: inline;
-            font-weight: 800;
-            border: 2px solid black;
-            padding: 1rem;
-            padding-top: 0.5rem;
-            user-select: none;
-            
-            &:hover {
-                background: white;
-                color: black;
-                cursor: pointer;
-            }
+
+    .arrow {
+        background: black;
+        color: white;
+        font-size: 1rem;
+        display: inline;
+        font-weight: 800;
+        border: 2px solid black;
+        padding: 1rem;
+        padding-top: 0.8rem;
+        user-select: none;
+        margin: 2rem;
+        
+        &:hover {
+            background: white;
+            color: black;
+            cursor: pointer;
         }
     }
 }

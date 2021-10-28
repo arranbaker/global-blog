@@ -1,5 +1,5 @@
 header {
-    height: 10vh;
+    height: 10%;
     padding-top: 2rem;
     padding-left: 2rem;
     
@@ -8,15 +8,15 @@ header {
         font-family: $secondary-font;
         margin: 0;
         transition: 0.2s;
-        background: black;
-        color: white;
+        background: white;
+        color: black;
         display: inline;
-        padding: 0.5rem;
+        padding: 0.125rem;
         border: 2px solid black;
 
         &:hover {
-           background: white;
-           color: black;
+           background: black;
+           color: white;
         }
     }
 }
