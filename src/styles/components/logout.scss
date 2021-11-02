@@ -1,0 +1,16 @@
+.logout-button {
+    width: auto;
+    margin: 0;
+    margin-right: 2rem;
+    background: white;
+    font-family: $secondary-font;
+    border: 2px solid black;
+    transition: 0.3s;
+    padding: 0.5rem;
+
+    &:hover {
+        cursor: pointer;
+        background: black;
+        color: white;
+    }
+}

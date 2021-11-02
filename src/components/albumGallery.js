@@ -12,7 +12,6 @@ const AlbumGallery = ({ openGallery }) => {
                         <div id={card.folder} style={{ backgroundImage: `url(${card.coverImage})` }} className="card" onClick={openGallery} key={cardIndex}>
                             <div id={card.folder} className='info-container'>
                                 <h2 id={card.folder}>{card.title}</h2>
-                                {/*<p id={card.folder}>{card.description}</p>*/}
                             </div>
                         </div>
                     )

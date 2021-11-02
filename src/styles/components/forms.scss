@@ -1,0 +1,46 @@
+.page-container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    @media (min-height: 889px) {
+        height: 80vh;
+    }
+}
+
+.form-title {
+    font-family: $secondary-font;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    h2:first-child {
+        margin-top: 1rem;
+    }
+
+    input {
+        padding: 0.5rem;
+        border: 2px solid #313639;
+        margin: 0.2rem;
+        height: 2rem;
+        font-size: 1rem;
+        
+        &:focus {
+            outline: none;
+        }
+
+        &:last-child {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

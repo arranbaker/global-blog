@@ -31,7 +31,7 @@ const ImageGallery = ({ closeGallery, albumId }) => {
         <div className='gallery-container'>
             <div className='gallery-container-close-btn' onClick={closeGallery}>X</div>
             <div className='gallery-slider-container'>
-                <div className='left-arrow arrow' onClick={prevSlide}>&lt;</div>
+                <div className='arrow' onClick={prevSlide}>&lt;</div>
                 {imageData.map((gallery, galleryIndex) => {
                     if (gallery.folder === albumId)
                         return (
@@ -52,7 +52,7 @@ const ImageGallery = ({ closeGallery, albumId }) => {
                             </div>
                         )
                 })}
-                <div className='right-arrow arrow' onClick={nextSlide}>&gt;</div>
+                <div className='arrow' onClick={nextSlide}>&gt;</div>
             </div>
         </div >
     )
