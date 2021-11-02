@@ -1,13 +1,19 @@
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0%;
     right: 0%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw;
 
     ul {
         display: flex;
         justify-content: flex-end;
+        margin: 0;
         margin-right: 2rem;
-        margin-bottom: 2rem;
+        
 
         li {
             font-family: $secondary-font;
@@ -24,5 +30,17 @@ footer {
                 cursor: pointer;
             }
         }
+    }
+}
+
+@media (min-height: 889px) {
+    footer {
+        height: 10vh;
+    }
+}
+
+@media (min-width: 800px) {
+    footer {
+        position: absolute;
     }
 }

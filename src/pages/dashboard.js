@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import ImageGallery from "../components/imageGallery";
 import AlbumGallery from "../components/albumGallery";
-import { imageData } from "../components/imageData";
 
-const Home = () => {
+const Dashboard = () => {
 
     const [albumId, setAlbumId] = useState('')
     const [gallery, setGallery] = useState(false)
@@ -25,4 +24,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Dashboard;
