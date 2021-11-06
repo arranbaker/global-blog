@@ -1,5 +1,4 @@
 import React from "react";
-import { imageData } from "./imageData";
 
 const AlbumGallery = ({ openGallery }) => {
 
