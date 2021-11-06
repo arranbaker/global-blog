@@ -6,12 +6,12 @@ import { useAuth } from "../contexts/authContext";
 
 const Header = () => {
 
-    const { activeUser } = useAuth();
+    const { userId } = useAuth();
 
     return (
         <header>
             <Link to='/'><h1 className='header-title'>GLOBAL (  )</h1></Link>
-            {activeUser != null && <Logout />}
+            {userId !== 'guest' && < Logout />}
         </header>
     )
 }

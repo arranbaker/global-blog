@@ -4,6 +4,7 @@
     margin-right: 2rem;
     background: white;
     font-family: $secondary-font;
+    border: none;
     border: 2px solid black;
     transition: 0.3s;
     padding: 0.5rem;
@@ -12,5 +13,6 @@
         cursor: pointer;
         background: black;
         color: white;
+        opacity: 0.8;
     }
 }
