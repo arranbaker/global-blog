@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { useAuth } from "../contexts/authContext";
 
 const PublicRoute = ({ component: Component, ...rest }) => {
 
-    const { activeUser } = useAuth();
+    const { userId } = useAuth();
 
     return (
         <Route {...rest} render={props => {
-            return activeUser ? <Redirect to='/' /> : <Component {...props} />
+            return userId !== 'guest' ? <Redirect to='/' /> : <Component {...props} />
         }}>
         </Route>
     )

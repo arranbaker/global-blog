@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useAuth } from "../contexts/authContext";
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
 
@@ -27,6 +28,7 @@ const ForgotPassword = () => {
                     <input placeholder="Email" onChange={(event) => { setEmailLogin(event.target.value) }} required></input>
                     <button type='button' onClick={handleLogin}>Send</button>
                 </form>
+                <Link to='/login' className='login-link'>Login</Link>
             </div>
         </div >
     );

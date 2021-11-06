@@ -353,10 +353,14 @@
   body,html {
     margin: 0;
     padding: 0;
-}
+    overflow-y: hidden; 
+    overflow-x: hidden;
+  }
 
   * {
     box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
   }
   
   //a-tags

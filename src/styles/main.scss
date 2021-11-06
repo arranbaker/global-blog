@@ -2,16 +2,16 @@
 @import 'base/typography';
 
 @import 'components/albumGallery.scss';
-@import 'components/imageGallery.scss';
 @import 'components/buttons.scss';
 @import 'components/logout.scss';
 @import 'components/forms.scss';
+@import 'components/uploadForm.scss';
+@import 'components/info.scss';
 
-@import 'pages/home.scss';
-@import 'pages/info.scss';
-@import 'pages/blog.scss';
 @import 'pages/login.scss';
+@import 'pages/signup.scss';
 @import 'pages/forgotPassword.scss';
+@import 'pages/dashboard.scss';
 
 @import 'layout/header.scss';
 @import 'layout/footer.scss';

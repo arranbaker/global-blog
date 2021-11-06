@@ -1,0 +1,14 @@
+.info-container {
+    position: absolute;
+    width: 30vw;
+    right: 0vw;
+    bottom: 15vh;
+    height: 70vh;
+    background: black;
+    color: white;
+    transition: 0.4s;
+
+    h2 {
+        margin-left: 2rem;
+    }
+}

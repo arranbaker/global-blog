@@ -1,24 +1,36 @@
 import React from "react";
+import useFirestore from "../hooks/useFirestore";
+import HorizontalScroll from "react-scroll-horizontal";
+import { useAuth } from "../contexts/authContext";
 
-const AlbumGallery = ({ openGallery }) => {
+const AlbumGallery = () => {
+
+    const { userId } = useAuth();
+
+    const { files } = useFirestore(`${userId}/folder/images`);
+
+    const child = { width: `auto` }
+    const parent = { width: `100vw` }
+
 
     return (
-        <div className='album-gallery-container'>
-            <h2 className='album-cards-title'>ALBUMS</h2>
-            <div className="album-cards">
-                {imageData.map((card, cardIndex) => {
-                    return (
-                        <div id={card.folder} style={{ backgroundImage: `url(${card.coverImage})` }} className="card" onClick={openGallery} key={cardIndex}>
-                            <div id={card.folder} className='info-container'>
-                                <h2 id={card.folder}>{card.title}</h2>
+
+        <div className='album-gallery-container' style={parent}>
+            <h2 className='album-cards-title'>START SCROLLING</h2>
+            <HorizontalScroll reverseScroll={true}>
+                <div className="album-cards-container container" style={child}>
+                    {files && files.map((card, cardIndex) => {
+                        console.log(card)
+                        return (
+                            <div className='card-container blocks' key={cardIndex}>
+                                {<img id={card.folder} src={card.url} className="card" alt={card.name} />}
                             </div>
-                        </div>
-                    )
-                })}
-            </div>
+                        )
+                    })}
+                </div>
+            </HorizontalScroll>
         </div >
     )
 }
-
 
 export default AlbumGallery;

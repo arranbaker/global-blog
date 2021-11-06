@@ -1,0 +1,41 @@
+.upload-form-container {
+    height: auto;
+    background: transparent;
+
+    form {
+        border: 2px solid black;
+        background: white;
+        margin: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    label {
+        width: auto;
+        text-align: center;
+        font-size: 2rem;
+        padding: 0.3rem;
+        font-family: $secondary-font;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        &:hover {
+            cursor: pointer;
+            background: black;
+            color: white;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    .output {
+        display: inline;
+        text-align: center;
+        margin: 0;
+        font-family: $secondary-font;
+    }
+}

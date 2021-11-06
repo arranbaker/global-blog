@@ -13,6 +13,7 @@ export const AuthProvider = ({ children }) => {
 
     const [activeUser, setActiveUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [userId, setUserId] = useState('guest')
 
     const login = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
@@ -30,20 +31,21 @@ export const AuthProvider = ({ children }) => {
         return signOut(auth)
     }
 
-
-
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            setActiveUser(user);
-            setLoading(false)
-            console.log(user)
+            if (user) {
+                setActiveUser(user);
+                setLoading(false)
+                setUserId(user.uid)
+            } else {
+                setUserId('guest')
+                setLoading(false)
+            }
         })
 
         return unsubscribe
 
     }, [])
-
-
 
     const value = {
         activeUser,
@@ -51,6 +53,7 @@ export const AuthProvider = ({ children }) => {
         signup,
         resetPassword,
         logout,
+        userId,
     }
 
     return (
