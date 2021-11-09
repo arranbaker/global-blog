@@ -4,7 +4,7 @@ import AlbumGallery from "../components/albumGallery";
 const Dashboard = () => {
 
     return (
-        <div className='dashbaord-container'>
+        <div className='dashboard-container'>
             <AlbumGallery />
         </div>
     )

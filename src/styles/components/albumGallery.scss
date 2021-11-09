@@ -34,7 +34,26 @@
       overflow-x: scroll;
     
     .card-container {
-      z-index: -1;
+      z-index: 20;
+      position: relative;
+    }
+
+    .delete-image-button {
+      position: absolute;
+      border: 2px solid black;
+      font-size: 1rem;
+      font-family: $secondary-font;
+      background: white;
+      padding: 1rem;
+      top: 1rem;
+      left: 1rem;
+      height: auto;
+
+      &:hover {
+        cursor: pointer;
+        background: black;
+        color: white;
+      }
     }
 
     .card {
@@ -50,12 +69,6 @@
       }
     }
 
-    
-    .card:hover,
-    .card:focus-within    {
-      //transform: translateX(-0.5rem) translateY(-0.5rem);
-      cursor: pointer;
-    }
   }
 
   @media (min-height: 889px) {
