@@ -14,12 +14,26 @@ footer {
         margin: 0;
         margin-right: 2rem;
 
+        &:last-child {
+            border-right: 2px solid black;
+        }
+
+        .li-blog {
+            border-left: 2px solid black;
+        }
+
+       .li-add {
+            border-right: 2px solid black;
+        }
+        
+
         li {
             font-family: $secondary-font;
             padding: 1rem;
             background: black;
             color: white;
             border-bottom: 2px solid black;
+            border-top: 2px solid black;
             transition: 0.4s;
             font-size: 0.9rem;
 
@@ -28,6 +42,15 @@ footer {
                 color: black;
                 cursor: pointer;
             }
+        }
+
+        .upload-button {
+            background: white;
+            color: black;
+            padding: 0;
+            width: 2.9rem;
+            font-size: 1.5rem;
+            border-left: 2px solid black;
         }
     }
 }

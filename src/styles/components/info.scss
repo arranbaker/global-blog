@@ -6,9 +6,19 @@
     height: 70vh;
     background: black;
     color: white;
-    transition: 0.4s;
+    transition: ease-in 0.4s;
 
     h2 {
         margin-left: 2rem;
+        font-family: $secondary-font;
+        transition: 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    p {
+        margin-left: 2rem;
+        font-family: $secondary-font;
+        transition: 0.2s;
+        transition-delay: 0.2s;
     }
 }

@@ -1,25 +1,23 @@
 .upload-form-container {
-    height: auto;
-    background: transparent;
+    height: 100%;
+    width: 100%;
 
     form {
-        border: 2px solid black;
         background: white;
+        color: black;
         margin: 0;
+        height: 100%;
+        width: 100%;
     }
-
-    h2 {
-        text-align: center;
-    }
-
+    
     label {
-        width: auto;
         text-align: center;
-        font-size: 2rem;
-        padding: 0.3rem;
         font-family: $secondary-font;
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
+        background: white;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
 
         &:hover {
             cursor: pointer;

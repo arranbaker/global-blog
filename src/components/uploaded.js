@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import useStorage from "../hooks/useStorage";
 
 const Upload = ({ file, setFile }) => {
@@ -13,7 +13,7 @@ const Upload = ({ file, setFile }) => {
 
     return (
         <>
-            {file && <div>Complete</div>}
+            {file && <div className='upload-complete'></div>}
         </>
     );
 }

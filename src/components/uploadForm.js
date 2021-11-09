@@ -31,7 +31,7 @@ const UploadForm = () => {
                 </label>
                 <div className='output'>
                     {error && <div className='error'>{error}</div>}
-                    {file && <div className='file'>File Selected</div>}
+                    {file && <div className='file'></div>}
                     {file && <Upload file={file} setFile={setFile} />}
                 </div>
             </form>
