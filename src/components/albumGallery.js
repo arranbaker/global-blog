@@ -12,7 +12,6 @@ const AlbumGallery = () => {
 
     const child = { width: `auto` }
     const parent = { width: `100vw` }
-    const [deleteButton, setDeleteButton] = useState('inline');
     const [removeUrl, setRemoveUrl] = useState('')
     const [removeId, setRemoveId] = useState('')
 
