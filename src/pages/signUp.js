@@ -17,8 +17,9 @@ const Signup = () => {
             setLoading(true)
             await signup(emailSignup, passwordSignup);
             history.push('/');
-        } catch {
+        } catch (e) {
             setError('Sign Up Failed')
+            alert(e.message)
         }
 
         setLoading(false)
