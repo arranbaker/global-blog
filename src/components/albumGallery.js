@@ -34,7 +34,7 @@ const AlbumGallery = () => {
                         return (
                             <div className='card-container blocks' key={cardIndex}>
                                 {<img id={card.id} src={card.url} className="card" alt={card.name} />}
-                                {card.id !== '' && <div className='delete-image-button' id={card.id} title={card.url} style={{ display: `${deleteButton}` }} onClick={removeImage}>DELETE</div>}
+                                {card.id !== '' && <div className='delete-image-button' id={card.id} title={card.url} style={{ display: inline }} onClick={removeImage}>DELETE</div>}
                             </div>
                         )
                     })}
