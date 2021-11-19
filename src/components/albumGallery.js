@@ -27,7 +27,7 @@ const AlbumGallery = () => {
 
         <div className='album-gallery-container' style={parent}>
             {files.length === 0 ? <h2 className='album-cards-title'>ADD IMAGES</h2> : <h2 className='album-cards-title'>START SCROLLING</h2>}
-            <HorizontalScroll reverseScroll={true}>
+            <HorizontalScroll reverseScroll={true} style={{ maxWidth: '100vw' }}>
                 <div className="album-cards-container container" style={child}>
                     {files && files.map((card, cardIndex) => {
                         console.log(card)

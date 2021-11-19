@@ -11,7 +11,7 @@ const Footer = () => {
     const [content, setContent] = useState('0')
 
     const openInfo = () => {
-        setInfo('30vw')
+        setInfo('40vw')
         setContent('1')
     }
 
